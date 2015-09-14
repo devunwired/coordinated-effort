@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlidingCardsActivity">
+
+    <com.example.android.coordinatedeffort.widget.SlidingCardLayout
+        android:id="@+id/pane_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:colorBackground="#A55"
+        android:text="Card 1"/>
+
+    <com.example.android.coordinatedeffort.widget.SlidingCardLayout
+        android:id="@+id/pane_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:colorBackground="#5A5"
+        android:text="Card 2"/>
+
+    <com.example.android.coordinatedeffort.widget.SlidingCardLayout
+        android:id="@+id/pane_three"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:colorBackground="#55A"
+        android:text="Card 3"/>
+
+    <com.example.android.coordinatedeffort.widget.SlidingCardLayout
+        android:id="@+id/pane_four"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:colorBackground="#5AA"
+        android:text="Card 4"/>
+</android.support.design.widget.CoordinatorLayout>

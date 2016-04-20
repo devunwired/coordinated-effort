@@ -60,10 +60,16 @@ public class FooterBarBehavior extends CoordinatorLayout.Behavior<FooterBarLayou
     public boolean onLayoutChild(CoordinatorLayout parent,
                                  FooterBarLayout child,
                                  int layoutDirection) {
+        //Lay out the view ourselves to hang to the bottom
+        child.layout(parent.getLeft(),
+                parent.getBottom() - child.getMeasuredHeight(),
+                parent.getRight(),
+                parent.getBottom());
+
         //Gather initial state
         mChildInitialOffset = child.getTop();
 
-        //Let the framework lay out the view
-        return false;
+        //Tell the framework not to bother
+        return true;
     }
 }
